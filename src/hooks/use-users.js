@@ -7,8 +7,5 @@ export const getUsers = async () => {
         },
     });
 
-    const r = await response.json();
-    console.log(r);
-
-    return r;
+    return await response.json();
 };
