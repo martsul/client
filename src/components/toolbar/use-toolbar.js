@@ -31,9 +31,10 @@ class PostData {
         this.#response = await fetch(this.#workLink, {
             method: "POST",
             body: this.#data,
-            headers: { "Content-Type": "application/json" },
+            headers: {
+                "Content-Type": "application/json",
+            },
             credentials: "include",
-            "Cache-Control": "no-cache",
         });
     }
 

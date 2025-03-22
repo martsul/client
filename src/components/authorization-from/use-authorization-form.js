@@ -21,7 +21,7 @@ const handlerFetch = async (data, thereIsAccount, navigate, setError) => {
         body: data,
         headers: {
             "Content-Type": "application/json",
-            "Cache-Control": "no-cache",
+            "Cache-Control": "no-store",
         },
         credentials: "include",
     });

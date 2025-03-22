@@ -3,9 +3,12 @@ export const getUsers = async () => {
         method: "GET",
         credentials: "include",
         headers: {
-            "Cache-Control": "no-cache",
+            "Cache-Control": "no-store",
         },
     });
 
-    return await response.json();
+    const r = await response.json();
+    console.log(r);
+
+    return r;
 };
